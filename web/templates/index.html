@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav li {
+            margin: 10px 0;
+        }
+        .endpoint {
+            font-weight: bold;
+        }
+        .description {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Документация REST API</h1>
+    <p>Этот документ предоставляет обзор доступных маршрутов и их функциональности.</p>
+    <nav>
+        <ul>
+            <li>
+                <span class="endpoint">Пациенты</span> - <code>/registration_office</code>
+                <div class="description">
+                    <p>GET: Получить список пациентов.</p>
+                    <p>POST: Добавить нового пациента.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Пациент по ID</span> - <code>/registration_office/{id}</code>
+                <div class="description">
+                    <p>GET: Получить данные пациента по ID.</p>
+                    <p>PUT: Обновить данные пациента по ID.</p>
+                    <p>DELETE: Удалить пациента по ID.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Врачи</span> - <code>/doctors</code>
+                <div class="description">
+                    <p>GET: Получить список врачей.</p>
+                    <p>POST: Добавить нового врача.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Врач по ID</span> - <code>/doctors/{id}</code>
+                <div class="description">
+                    <p>GET: Получить данные врача по ID.</p>
+                    <p>PUT: Обновить данные врача по ID.</p>
+                    <p>DELETE: Удалить врача по ID.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Специализации</span> - <code>/specializations</code>
+                <div class="description">
+                    <p>GET: Получить список специализаций.</p>
+                    <p>POST: Добавить новую специализацию.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Специализация по ID</span> - <code>/specializations/{id}</code>
+                <div class="description">
+                    <p>GET: Получить данные специализации по ID.</p>
+                    <p>PUT: Обновить данные специализации по ID.</p>
+                    <p>DELETE: Удалить специализацию по ID.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Кабинеты</span> - <code>/rooms</code>
+                <div class="description">
+                    <p>GET: Получить список кабинетов.</p>
+                    <p>POST: Добавить новый кабинет.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Кабинет по ID</span> - <code>/rooms/{id}</code>
+                <div class="description">
+                    <p>GET: Получить данные кабинета по ID.</p>
+                    <p>PUT: Обновить данные кабинета по ID.</p>
+                    <p>DELETE: Удалить кабинет по ID.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Записи</span> - <code>/appointments</code>
+                <div class="description">
+                    <p>GET: Получить список записей.</p>
+                    <p>POST: Добавить новую запись.</p>
+                </div>
+            </li>
+            <li>
+                <span class="endpoint">Запись по ID</span> - <code>/appointments/{id}</code>
+                <div class="description">
+                    <p>GET: Получить данные записи по ID.</p>
+                    <p>PUT: Обновить данные записи по ID.</p>                    
+                    <p>DELETE: Удалить запись по ID.</p>
+                </div>
+            </li>
+        </ul>
+        </nav>
+    </body>
+    </html>
+    
