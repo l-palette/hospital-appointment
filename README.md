@@ -1,11 +1,10 @@
+**Активация venv**
 ```bash
 python3 -m venv lab1
 source lab1/bin/activate
 ```
-
-### База данных
-#### Структура
-```
+**Структура проекта**
+```bash
 /web
 |   app.py
 |   database.py
@@ -17,19 +16,7 @@ docker-compose.yml
 README.md
 requirements.txt
 ```
-```bash
-docker run --name db_patients -p 5432:5432    -e POSTGRES_USER=user    -e POSTGRES_PASSWORD=password   -e POSTGRES_DB=db_patients    -e PGDATA=/var/lib/postgresql/data/pgdata    -d -v "$(pwd)/postgres_data":/var/lib/postgresql/data postgres
-```
-
-```
-CREATE SEQUENCE IF NOT EXISTS patientid_seq START WITH 1;
-CREATE TABLE IF NOT EXISTS patients (
- patientid INT PRIMARY KEY DEFAULT nextval('patientid_seq'),
- name TEXT NOT NULL
-);
-```
-
-web Dockerfile
+# 1. Dockerfile для web-приложения
 ```Dockerfile
 FROM alpine
 
@@ -46,5 +33,122 @@ COPY . /web
 
 CMD ["python3", "app.py"]
 ```
+# 2. База данных
+**Запуск docker-контейнера postgres
+```bash
+docker run --name db_patients -p 5432:5432    
+-e POSTGRES_USER=user    
+-e POSTGRES_PASSWORD=password   
+-e POSTGRES_DB=db_patients    
+-e PGDATA=/var/lib/postgresql/data/pgdata    
+-d -v "$(pwd)/postgres_data":/var/lib/postgresql/data 
+postgres
+```
+**Таблицы**
+```
+CREATE SEQUENCE IF NOT EXISTS patientid_seq START WITH 1;
+CREATE TABLE IF NOT EXISTS patient (
+    id INT PRIMARY KEY DEFAULT nextval('patientid_seq'),
+    name VARCHAR(255) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    telephone VARCHAR(20) NOT NULL
+);
 
-docker-compose.yml
+CREATE SEQUENCE IF NOT EXISTS doctor_id START WITH 1;
+CREATE TABLE doctor (
+    id INT PRIMARY KEY DEFAULT nextval('doctor_id'),
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE SEQUENCE IF NOT EXISTS specialization_id START WITH 1;
+CREATE TABLE specialization (
+    id INT PRIMARY KEY DEFAULT nextval('specialization_id'),
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE SEQUENCE IF NOT EXISTS doctor_specialization_id START WITH 1;
+CREATE TABLE doctor_specialization (
+    id INT PRIMARY KEY DEFAULT nextval('doctor_specialization_id'),
+    doctor_id INT REFERENCES doctor(id),
+    specialization_id INT REFERENCES specialization(id)
+);
+
+CREATE SEQUENCE IF NOT EXISTS room_id START WITH 1;
+CREATE TABLE room (
+    id INT PRIMARY KEY DEFAULT nextval('room_id'),
+    name VARCHAR(20) NOT NULL
+);
+
+CREATE SEQUENCE IF NOT EXISTS appointment_id START WITH 1;
+CREATE TABLE appointment ( 
+    id INT PRIMARY KEY DEFAULT nextval('appointment_id'),
+    patient_id INT REFERENCES patient(id),
+    doctor_id INT REFERENCES doctor(id),
+    time TIME NOT NULL,
+    date DATE NOT NULL,
+    room_id INT REFERENCES room(id),
+    status VARCHAR NOT NULL
+);
+```
+# 3. Docker-compose docker-контейнеров web и бд
+```bash
+services:
+  db:
+    image: postgres:latest
+    container_name: db_patients
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: db_patients
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+      - ./postgres_data/init.sql:/docker-entrypoint-initdb.d/init.sql  
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: web_app
+    ports:
+      - 5000:5000
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://user:password@db:5432/db_patients
+```
+# 4. Сервисы приложения
+**Пациенты**
+1. Список пациентов
+2. Добавление нового пациента
+3. Получение данных о пациенте по id
+4. Обновление данных о пациенте по id
+5. Удаление пациента по id
+**Доктора**
+6. Список докторов
+7. Добавление нового доктора + специализации
+8. Получение данных о докторе по id + специализация
+9. Обновление данных о докторе по id + специализация
+10. Удаление доктора по id + специализация
+**Специализации**
+11. Список специализаций
+12. Добавление новой специализации
+13. Получение данных о специализации по id
+14. Обновление данных о специализации по id
+15. Удаление специализации по id
+**Комнаты**
+16. Список комнат
+17. Добавление новой комнаты
+18. Получение данных о комнате по id
+19. Обновление данных о комнате по id
+20. Удаление комнаты по id
+**Записи**
+21. Список записей 
+22. Добавление новой записи
+23. Получение данных о записи по id
+24. Обновление данных о записи по id
+25. Удаление записи по id
+
+# 5. CI/CD
