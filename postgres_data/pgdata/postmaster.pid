@@ -4,5 +4,5 @@
 5432
 /var/run/postgresql
 *
-    10801         0
+    10801         1
 ready   
