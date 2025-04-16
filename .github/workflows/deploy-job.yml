@@ -22,4 +22,4 @@ jobs:
 
       - name: Deploy to local machine
         run: |
-          ssh -i ~/.ssh/id_rsa tatiana@77.242.108.8 "cd /home/tatiana/hospital-appointment && git config pull.rebase true && git pull && docker-compose down && docker-compose up --build -d"
+          ssh -i ~/.ssh/id_rsa tatiana@77.242.108.8 "cd /home/tatiana/hospital-appointment && sudo chmod -R 755 /home/tatiana/hospital-appointment/postgres_data/pgdata && git config pull.rebase true && git pull && docker-compose down && docker-compose up --build -d"
