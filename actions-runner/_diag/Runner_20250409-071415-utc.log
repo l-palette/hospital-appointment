@@ -1,0 +1,148 @@
+[2025-04-09 07:14:15Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'Credentials': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'Runner': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.runner'
+[2025-04-09 07:14:15Z INFO Listener] Runner is built for OSX (X64) - osx-x64.
+[2025-04-09 07:14:15Z INFO Listener] RuntimeInformation: Darwin 22.2.0 Darwin Kernel Version 22.2.0: Fri Nov 11 02:04:44 PST 2022; root:xnu-8792.61.2~4/RELEASE_ARM64_T8103.
+[2025-04-09 07:14:15Z INFO Listener] Version: 2.323.0
+[2025-04-09 07:14:15Z INFO Listener] Commit: d8b82f44a9ec0258904d5869ae683c31d5aac299
+[2025-04-09 07:14:15Z INFO Listener] Culture: en-RU
+[2025-04-09 07:14:15Z INFO Listener] UI Culture: en-RU
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO Listener] Validating directory permissions for: '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO CommandLineParser] Parse
+[2025-04-09 07:14:15Z INFO CommandLineParser] Parsing 1 args
+[2025-04-09 07:14:15Z INFO CommandLineParser] parsing argument
+[2025-04-09 07:14:15Z INFO CommandLineParser] HasArgs: False
+[2025-04-09 07:14:15Z INFO CommandLineParser] Adding Command: run
+[2025-04-09 07:14:15Z INFO Listener] Arguments parsed
+[2025-04-09 07:14:15Z INFO Runner] ExecuteCommand
+[2025-04-09 07:14:15Z INFO ConfigurationStore] currentAssemblyLocation: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin/Runner.Listener.dll
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] binPath: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] RootFolder: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'Runner': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.runner'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] ConfigFilePath: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.runner
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'MigratedRunner': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.runner_migrated'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] MigratedConfigFilePath: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.runner_migrated
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'Credentials': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] CredFilePath: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'MigratedCredentials': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_migrated'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] MigratedCredFilePath: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_migrated
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'Service': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.service'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] ServiceConfigFilePath: /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.service
+[2025-04-09 07:14:15Z INFO CommandSettings] Flag 'help': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Flag 'version': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Flag 'commit': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Flag 'check': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Command 'configure': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Command 'remove': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Command 'warmup': 'False'
+[2025-04-09 07:14:15Z INFO ConfigurationManager] LoadSettings
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsConfigured()
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsConfigured: True
+[2025-04-09 07:14:15Z INFO ConfigurationManager] Is configured: True
+[2025-04-09 07:14:15Z INFO ConfigurationStore] Read setting file: 316 chars
+[2025-04-09 07:14:15Z INFO ConfigurationManager] Settings Loaded
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsServiceConfigured()
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsServiceConfigured: False
+[2025-04-09 07:14:15Z INFO CommandSettings] Command 'run': 'True'
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsConfigured()
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsConfigured: True
+[2025-04-09 07:14:15Z INFO ConfigurationManager] Is configured: True
+[2025-04-09 07:14:15Z INFO Runner] Could not parse the argument value '' for StartupType. Defaulting to Manual
+[2025-04-09 07:14:15Z INFO Runner] Set runner startup type - Manual
+[2025-04-09 07:14:15Z INFO CommandSettings] Flag 'once': 'False'
+[2025-04-09 07:14:15Z INFO CommandSettings] Flag 'once': 'False'
+[2025-04-09 07:14:15Z INFO Runner] RunAsync
+[2025-04-09 07:14:15Z INFO ConfigurationManager] LoadSettings
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsConfigured()
+[2025-04-09 07:14:15Z INFO ConfigurationStore] IsConfigured: True
+[2025-04-09 07:14:15Z INFO ConfigurationManager] Is configured: True
+[2025-04-09 07:14:15Z INFO ConfigurationManager] Settings Loaded
+[2025-04-09 07:14:15Z INFO MessageListener] {
+  "AgentId": 2,
+  "AgentName": "Tatianas-MacBook-Air",
+  "PoolId": 1,
+  "PoolName": "Default",
+  "ServerUrl": "https://pipelinesghubeus4.actions.githubusercontent.com/d7WJU5sg2OIIb2J6KrbB0vDEkBiFj5LRjdqXgxRZCJju4g3ukC/",
+  "GitHubUrl": "https://github.com/l-palette/hospital-appointment",
+  "WorkFolder": "_work"
+}
+[2025-04-09 07:14:15Z INFO MessageListener] Loading Credentials
+[2025-04-09 07:14:15Z INFO ConfigurationStore] HasCredentials()
+[2025-04-09 07:14:15Z INFO ConfigurationStore] stored True
+[2025-04-09 07:14:15Z INFO CredentialManager] GetCredentialProvider
+[2025-04-09 07:14:15Z INFO CredentialManager] Creating type OAuth
+[2025-04-09 07:14:15Z INFO CredentialManager] Creating credential type: OAuth
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Bin': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/bin'
+[2025-04-09 07:14:15Z INFO HostContext] Well known directory 'Root': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner'
+[2025-04-09 07:14:15Z INFO HostContext] Well known config file 'RSACredentials': '/Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_rsaparams'
+[2025-04-09 07:14:15Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_rsaparams
+[2025-04-09 07:14:15Z INFO MessageListener] Attempt to create session.
+[2025-04-09 07:14:15Z INFO MessageListener] Connecting to the Runner Server...
+[2025-04-09 07:14:15Z INFO RunnerServer] EstablishVssConnection
+[2025-04-09 07:14:15Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2025-04-09 07:14:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-09 07:14:16Z INFO RunnerServer] EstablishVssConnection
+[2025-04-09 07:14:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-09 07:14:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-09 07:14:16Z INFO RunnerServer] EstablishVssConnection
+[2025-04-09 07:14:16Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2025-04-09 07:14:16Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2025-04-09 07:14:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-09 07:14:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-09 07:14:17Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2025-04-09 07:14:17Z INFO MessageListener] VssConnection created
+[2025-04-09 07:14:17Z INFO Terminal] WRITE LINE: 
+[2025-04-09 07:14:17Z INFO Terminal] WRITE LINE: 
+[2025-04-09 07:14:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_rsaparams
+[2025-04-09 07:14:17Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_rsaparams
+[2025-04-09 07:14:18Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-09 07:14:18Z INFO MessageListener] Session created.
+[2025-04-09 07:14:18Z INFO Terminal] WRITE LINE: Current runner version: '2.323.0'
+[2025-04-09 07:14:18Z INFO Terminal] WRITE LINE: 2025-04-09 07:14:18Z: Listening for Jobs
+[2025-04-09 07:14:18Z INFO JobDispatcher] Set runner/worker IPC timeout to 30 seconds.
+[2025-04-09 07:14:18Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_rsaparams
+[2025-04-09 07:14:19Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-09 07:44:37Z INFO MessageListener] No message retrieved from session '46e45d5e-10e1-46fb-8536-30fafa2b5b32' within last 30 minutes.
+[2025-04-09 08:04:48Z INFO RSAFileKeyManager] Loading RSA key parameters from file /Users/tatiana/Documents/study/university/term6/devops/lab4/actions-runner/.credentials_rsaparams
+[2025-04-09 08:04:49Z INFO GitHubActionsService] AAD Correlation ID for this token request: Unknown
+[2025-04-09 08:07:21Z ERR  GitHubActionsService] GET request to https://pipelinesghubeus4.actions.githubusercontent.com/d7WJU5sg2OIIb2J6KrbB0vDEkBiFj5LRjdqXgxRZCJju4g3ukC/_apis/distributedtask/pools/1/messages?sessionId=46e45d5e-10e1-46fb-8536-30fafa2b5b32&status=Online&runnerVersion=2.323.0&os=macOS&architecture=X64&disableUpdate=false failed. HTTP Status: Forbidden
+[2025-04-09 08:07:21Z ERR  MessageListener] Catch exception during get next message.
+[2025-04-09 08:07:22Z ERR  MessageListener] GitHub.DistributedTask.WebApi.AccessDeniedException: Access denied. System:ServiceIdentity;DDDDDDDD-DDDD-DDDD-DDDD-DDDDDDDDDDDD needs View permissions to perform the action.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpRequestMessage message, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync[T](HttpMethod method, IEnumerable`1 additionalHeaders, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.GetNextMessageAsync(CancellationToken token)
+[2025-04-09 08:07:22Z INFO MessageListener] Non-retriable exception: Access denied. System:ServiceIdentity;DDDDDDDD-DDDD-DDDD-DDDD-DDDDDDDDDDDD needs View permissions to perform the action.
+[2025-04-09 08:07:22Z INFO JobDispatcher] Shutting down JobDispatcher. Make sure all WorkerDispatcher has finished.
+[2025-04-09 08:07:22Z INFO Runner] Deleting Runner Session...
+[2025-04-09 08:07:22Z ERR  GitHubActionsService] DELETE request to https://pipelinesghubeus4.actions.githubusercontent.com/d7WJU5sg2OIIb2J6KrbB0vDEkBiFj5LRjdqXgxRZCJju4g3ukC/_apis/distributedtask/pools/1/sessions/46e45d5e-10e1-46fb-8536-30fafa2b5b32 failed. HTTP Status: Forbidden
+[2025-04-09 08:07:22Z ERR  Terminal] WRITE ERROR: An error occurred: Access denied. System:ServiceIdentity;DDDDDDDD-DDDD-DDDD-DDDD-DDDDDDDDDDDD needs View permissions to perform the action.
+[2025-04-09 08:07:22Z ERR  Listener] GitHub.DistributedTask.WebApi.AccessDeniedException: Access denied. System:ServiceIdentity;DDDDDDDD-DDDD-DDDD-DDDD-DDDDDDDDDDDD needs View permissions to perform the action.
+   at GitHub.Services.WebApi.VssHttpClientBase.HandleResponseAsync(HttpResponseMessage response, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpRequestMessage message, HttpCompletionOption completionOption, Object userState, CancellationToken cancellationToken)
+   at GitHub.Services.WebApi.VssHttpClientBase.SendAsync(HttpMethod method, Guid locationId, Object routeValues, ApiResourceVersion version, HttpContent content, IEnumerable`1 queryParameters, Object userState, CancellationToken cancellationToken)
+   at GitHub.DistributedTask.WebApi.TaskAgentHttpClientBase.DeleteAgentSessionAsync(Int32 poolId, Guid sessionId, Object userState, CancellationToken cancellationToken)
+   at GitHub.Runner.Listener.MessageListener.DeleteSessionAsync()
+   at GitHub.Runner.Listener.Runner.RunAsync(RunnerSettings settings, Boolean runOnce)
+   at GitHub.Runner.Listener.Runner.ExecuteCommand(CommandSettings command)
+   at GitHub.Runner.Listener.Program.MainAsync(IHostContext context, String[] args)
