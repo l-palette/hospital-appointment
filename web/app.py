@@ -9,11 +9,17 @@ from models import (
 )
 from database import db
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env')
+load_dotenv(dotenv_path)
+db_url = os.getenv("APP_DATABASE_URL")
 
 app = Flask(__name__)
 app.config["JSON_AS_ASCII"] = False
 app.config["JSON_SORT_KEYS"] = False
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://user:password@db:5432/db_patients"
+app.config["SQLALCHEMY_DATABASE_URI"] = db_url
 
 db.init_app(app)
 
