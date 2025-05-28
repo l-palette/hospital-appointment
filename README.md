@@ -191,7 +191,7 @@ services:
 # 6. Скрипты миграции
 Воспользуемся alembic:
 ### 1. Инициализация Alembic
-В корне проекта выполните:
+В корне проекта
 
 ```bash
 alembic init alembic
@@ -208,36 +208,11 @@ alembic.ini
 ```
 ### 2. Настройка Alembic
 
-Измените alembic.ini:
+Изменить alembic.ini:
 
 ```ini
 sqlalchemy.url = postgresql://user:password@localhost:5432/db_patients
 ```
 
-    Измените alembic/env.py:
 
-python
-
-from models import Base  # Импортируйте ваши модели
-target_metadata = Base.metadata
-
-# Также обновите конфигурацию для работы с Docker
-def run_migrations_online():
-    config = context.config
-    connectable = config.attributes.get("connection", None)
-    
-    if connectable is None:
-        connectable = engine_from_config(
-            config.get_section(config.config_ini_section),
-            prefix="sqlalchemy.",
-            poolclass=pool.NullPool,
-        )
-
-    with connectable.connect() as connection:
-        context.configure(
-            connection=connection, target_metadata=target_metadata
-        )
-        with context.begin_transaction():
-            context.run_migrations()
-
-    Добавьте в database.py или создайте новый файл models.py с определением всех моделей SQLAlchemy.
+и тд)
