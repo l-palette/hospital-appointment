@@ -1,20 +1,26 @@
 **Активация venv**
 ```bash
-python3 -m venv lab1
-source lab1/bin/activate
+python3 -m venv venv
+source venv/bin/activate
 ```
 **Структура проекта**
 ```bash
-/web
-|   app.py
-|   database.py
-|   models.py
-|   Dockerfile
-/postgres_data
-|   init.sql
-docker-compose.yml
-README.md
-requirements.txt
+project/
+|    /web
+|    |   app.py
+|    |   database.py
+|    |   models.py
+|    |   Dockerfile
+|    |   templates/
+|    |   |   index.html
+|    |   requirements.txt
+|    /postgres_data
+|    |   init.sql
+|    |   pgdata/
+|    requirements.txt
+|    .gitignore
+|    docker-compose.yml
+|    README.md
 ```
 # 1. Dockerfile для web-приложения
 ```Dockerfile
@@ -181,3 +187,57 @@ services:
 25. Удаление записи по id
 
 # 5. CI/CD
+
+# 6. Скрипты миграции
+Воспользуемся alembic:
+### 1. Инициализация Alembic
+В корне проекта выполните:
+
+```bash
+alembic init alembic
+```
+
+Это создаст структуру:
+
+```
+/alembic
+    /versions
+    env.py
+    script.py.mako
+alembic.ini
+```
+### 2. Настройка Alembic
+
+Измените alembic.ini:
+
+```ini
+sqlalchemy.url = postgresql://user:password@localhost:5432/db_patients
+```
+
+    Измените alembic/env.py:
+
+python
+
+from models import Base  # Импортируйте ваши модели
+target_metadata = Base.metadata
+
+# Также обновите конфигурацию для работы с Docker
+def run_migrations_online():
+    config = context.config
+    connectable = config.attributes.get("connection", None)
+    
+    if connectable is None:
+        connectable = engine_from_config(
+            config.get_section(config.config_ini_section),
+            prefix="sqlalchemy.",
+            poolclass=pool.NullPool,
+        )
+
+    with connectable.connect() as connection:
+        context.configure(
+            connection=connection, target_metadata=target_metadata
+        )
+        with context.begin_transaction():
+            context.run_migrations()
+
+    Добавьте в database.py или создайте новый файл models.py с определением всех моделей SQLAlchemy.

@@ -1,9 +1,0 @@
-﻿{
-  "agentId": 2,
-  "agentName": "Tatianas-MacBook-Air",
-  "poolId": 1,
-  "poolName": "Default",
-  "serverUrl": "https://pipelinesghubeus4.actions.githubusercontent.com/d7WJU5sg2OIIb2J6KrbB0vDEkBiFj5LRjdqXgxRZCJju4g3ukC/",
-  "gitHubUrl": "https://github.com/l-palette/hospital-appointment",
-  "workFolder": "_work"
-}
